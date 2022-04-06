@@ -10,6 +10,7 @@ import { Theme, createStyles, makeStyles } from '@material-ui/core/styles';
 import IconButton from '@material-ui/core/IconButton';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
 
+
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
     root: {
@@ -33,12 +34,13 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
+
 const Home = () => {
   const classes = useStyles();
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>Home Cafe</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <h3 className={styles.title}>
@@ -53,9 +55,7 @@ const Home = () => {
           <Link href="/listing" passHref>
             <div className={styles.card_home}>
               <h3>Listing &rarr;</h3>
-              <p>
-                Welcome to Listing.
-              </p>
+              <p>Welcome to our Cafe</p>
             </div>
           </Link>
         </Grid>
@@ -92,7 +92,8 @@ const Home = () => {
     </div>
   );
 };
-const itemData = [
+
+const cafeImageItem = [
   {
     img: 'https://tse1.mm.bing.net/th?id=OIP.v3zEEO-BLi3DZQpDfXhoUwHaEK&pid=Api&P=0&w=327&h=183',
     title: 'Popular Caffee',
