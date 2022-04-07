@@ -9,14 +9,14 @@ const ListingPage = () => {
   return (
     <div>
       <NavBar />
-      <Head>
-        <title>Listing</title>
-      </Head>
-      <h1 className={styles.title}>
+        <Head>
+          <title>Cafe Listing</title>
+        </Head>
+        <h1 className={styles.title}>
         <Link href="/">
           <a>Listing Cafe!</a>
         </Link>
-      </h1>
+        </h1>
       <Listing />
     </div>
   );
