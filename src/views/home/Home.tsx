@@ -70,7 +70,7 @@ const Home = () => {
       </Grid>
       <div className={classes.root}>
       <ImageList className={classes.imageList} cols={2.5}>
-        {itemData.map((item) => (
+        {cafeImageItem.map((item) => (
           <ImageListItem key={item.img}>
             <img src={item.img} alt={item.title}/>
             <ImageListItemBar
